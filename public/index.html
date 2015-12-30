@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>MySQL On Premise Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+
+  <body>
+  
+ 
+	<b>Basic CRUD Operations are supported. Create, Read, Update and Delete. Only GET (READ) is supported by browser.
+	PUT / DELETE</b>
+	<br><br>
+	
+	<table>
+	<tr>
+	<td>GET</td>
+	<td>(READ)</td>
+	<td>/Product</td>
+	<td>http://youruniquenamehere.mybluemix.net/Product</td>
+	</tr>
+	<tr>
+	<td>GET</td>
+	<td>(READ)</td>
+	<td>/Product/:id</td>
+	<td>http://youruniquenamehere.mybluemix.net/Product/:id</td>
+	</tr>
+	<tr>
+	<td>POST</td>
+	<td>(UPDATE)</td>
+	<td>Unimplemented</td>
+	<td>***</td>
+	</tr>
+	<tr>
+	<td>PUT</td>
+	<td>(CREATE)</td>
+	<td>/Product</td>
+	<td>curl -X PUT -d "Name=XXX" -d "Stock=XXX" http://youruniquenamehere.mybluemix.net/Product</td>
+	</tr>
+	<tr>
+	<td>DELETE</td>
+	<td>(DELETE)</td>
+	<td>/Product/:id</td>
+	<td>curl -X "DELETE" http://youruniquenamehere.mybluemix.net/Product/:id</td>
+	</tr>
+	</table>
+
+   
+  </body>
+
+</html>
